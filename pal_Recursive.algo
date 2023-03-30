@@ -1,0 +1,20 @@
+FUNCTION Pal-Rec(chaine:STRING, left:INTEGER, right:INTEGER)  :BOOLEAN
+
+BEGIN 
+//condition  d'arret le mot vide ou un mot avec un seul caractere
+
+IF (mot.length <= 1 ) THEN 
+        RETURN ( TRUE); // si on sort d'ici cela veut dire que tout le mot est parcourru et c'est un palindrome
+ELSE 
+   IF (left < right) THEN
+       IF (chaine[left] == chaine[right]) THEN
+         Pal-Rec(chaine, ++left, --right) // si egalite on appelle la fonction pour 
+                                          //verifier de la meme facon les autres caracteres
+       ELSE                               
+
+         RETURN (fALSE);                  // sinon on renvoie un false pour dire que ce n'est pas un palindrome
+   END_IF
+    RETURN (fALSE); 
+END_IF
+ 
+END
