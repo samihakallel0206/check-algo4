@@ -3,7 +3,7 @@ FUNCTION Pal-Rec(chaine:STRING, left:INTEGER, right:INTEGER)  :BOOLEAN
 BEGIN 
 //condition  d'arret le mot vide ou un mot avec un seul caractere
 
-IF (mot.length <= 1 ) THEN 
+IF (chaine.length <= 1 ) THEN 
         RETURN ( TRUE); // si on sort d'ici cela veut dire que tout le mot est parcourru et c'est un palindrome
 ELSE 
    IF (left < right) THEN
