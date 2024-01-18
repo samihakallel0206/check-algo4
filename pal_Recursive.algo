@@ -15,6 +15,7 @@ ELSE
          RETURN (fALSE);                  // sinon on renvoie un false pour dire que ce n'est pas un palindrome
    END_IF
     RETURN (fALSE); 
+//je suis entrain de rectifier 
 END_IF
  
 END
